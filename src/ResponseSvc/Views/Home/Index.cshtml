@@ -1,0 +1,36 @@
+﻿@using HildenCo.Core 
+@model List<Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center mb-5">
+        <h1 class="display-4">HildenCo WebStore</h1>
+        <p>To learn more about ASP.NET Core and microservices visit our blog at <a href="https://blog.hildenco.com">blog.hildenco.com</a>.</p>
+    </div>
+
+<div>
+    <h2>Here's our list of products:</h2>
+    <table class="table small">
+        <thead>
+            <tr>
+                <th scope="col" style="min-width:100px">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var p in Model)
+    {
+
+            <tr>
+                <th scope="row">@p.Slug</th>
+                <td>@p.Name</td>
+                <td class="small">@p.Description</td>
+                <td>@p.Currency @p.Price</td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
