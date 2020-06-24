@@ -1,7 +1,4 @@
 # aspnet-async-communication
-Async resquest/response exchange between two ASP.NET Core websites via RabbitMQ
-queues using MassTransit, Docker, Docker Compose and VueJS 
-
 Undoubtedly the most popular design pattern when writing distributed application
 is Pub/Sub. Turns out that there's another important design pattern used in
 distributed applications not as frequently mentioned, that can also be
