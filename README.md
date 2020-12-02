@@ -11,6 +11,10 @@ This repo implements async resquest/response exchange between two ASP.NET Core
 websites via RabbitMQ queues using MassTransit. We'll also wire everything up
 using Docker and Docker Compose. 
 
+## Read the Article
+To understand how to use this repo, make sure you read this article:   
+[Async Request/Response with MassTransit, RabbitMQ, Docker and .NET core](https://blog.hildenco.com/2020/11/async-requestresponse-with-masstransit.html)
+
 ## License
 This project is licensed under
 [the MIT License](https://opensource.org/licenses/MIT).
